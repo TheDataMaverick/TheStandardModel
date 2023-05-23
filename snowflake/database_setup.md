@@ -41,7 +41,7 @@ Should always be a representation of your main branch.
 
 The schema can be populated by a CD process, a scheduled run, by a run started by a developer, or by a run started by an orchestration system (like Dagster).
 
-### The development schemas
+### Development schemas
 
 Each developer will have their own schema. 
 
@@ -49,7 +49,7 @@ The name should be: `dev__<user_name>`
 
 Will be created when a developer does a `dbt run` or `dbt build`.
 
-### The CI schemas
+### CI schemas
 
 A schema should be created on each PR.
 
