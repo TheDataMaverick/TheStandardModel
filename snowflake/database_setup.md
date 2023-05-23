@@ -10,7 +10,7 @@ If you think something could be improved, let’s discuss it on the [dbt Slack c
 
 **The Standard Model has two database types:** 
  - analytical
- - data loader.
+ - data loader
 
 
 ## Analytical database
