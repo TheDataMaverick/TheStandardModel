@@ -26,7 +26,7 @@ The database has three types of schemas: data warehouse, development, and CI.
 
 The analytical database is 100% managed by dbt and can be created via `dbt run` or `dbt build`. 
 
-Create one Snowflake role to use for all dbt processes, (CD, CI, scheduled runs, and development). This significantly reduces errors. (See Snowflake setup).
+Create one Snowflake role to use for all dbt processes, (CD, CI, scheduled runs, and development). Not one role per process, but one role for everything. This significantly reduces errors. (See Snowflake setup).
 
 Since Snowflake presents schemas in alphabetical order, you will have the production data warehouse schema on top, and all CI schemas will be under your development schemas.
 
