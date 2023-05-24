@@ -33,7 +33,7 @@ Since Snowflake presents schemas in alphabetical order, you will have the produc
 Exposures, also called Marts and Subject areas, can be created with Snowflake roles that have select on specific tables, and via naming convention. (See Snowflake Setup) (See Exposures)
 
 ### Data warehouse schema
-Simply called datawarehouse.
+Simply called `datawarehouse`.
 
 Where all production models are located.
 
