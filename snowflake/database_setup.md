@@ -57,7 +57,7 @@ The schema should be deleted when the PR is closed.
 
 The name should be: `pr__<pr_number_000#> __<pr_name>`
 
-## Data loader database
+## Data loader databases
 
 Each data loader (Fivetran, Airbyte, Meltano), should have its own database.
 
