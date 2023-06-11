@@ -1,4 +1,4 @@
-name: PyMarkdownLnt
+name: MarkdownLint
 
 on:
   pull_request:
@@ -13,15 +13,15 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v3
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
 
-      - name: Install PyMarkdownLnt
-        run: |
-          python -m pip install --upgrade pip
-          pip install pymarkdownlnt
+      - name: Install markdownlint-cli
+        run: npm install -g markdownlint-cli
 
       - name: Lint Markdown files
         run: |
           git fetch --no-tags --prune --depth=1 origin +refs/heads/*:refs/remotes/origin/*
-          git ls-files --exclude-standard --cached --others -- '*.md' | xargs -I {} pymarkdown scan {}
+          git diff --name-only --diff-filter=d origin/main | grep .md$ | xargs markdownlint --config .markdownlint.yml
