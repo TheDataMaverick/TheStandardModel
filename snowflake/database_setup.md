@@ -1,10 +1,10 @@
 # The Standard Model Database Setup
 
-> **Remember to star 🤩 and watch 😎 this repository.
->
-> **[Your comments, questions, and especially improvements are more than welcome.](../the_standard_model/get_in_touch.md)**
+**Remember to star 🤩 and watch 😎 this repository.**
 
-**The Standard Model has two database types:**
+**[Your comments, questions, and especially improvements are more than welcome.](../the_standard_model/get_in_touch.md)**
+
+## The Standard Model has two database types
 
 - analytical
 - data loader
